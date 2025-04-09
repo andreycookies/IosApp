@@ -1,19 +1,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var speechRecognizer = SpeechRecognizer()
-    
+    @StateObject private var recognizer = SpeechRecognizer()
+    @State private var wordCount = 0
+
     var body: some View {
         VStack(spacing: 20) {
-            Text("Word Count: \(speechRecognizer.wordCount)")
+            Text("Слов: \(wordCount)")
                 .font(.largeTitle)
-            
+
             Button(action: {
-                speechRecognizer.toggleRecording()
+                if recognizer.isListening {
+                    recognizer.stopTranscribing()
+                } else {
+                    recognizer.startTranscribing { text in
+                        let words = text.split(separator: " ")
+                        wordCount = words.count
+                    }
+                }
             }) {
-                Text(speechRecognizer.isRecording ? "Stop Listening" : "Start Listening")
+                Text(recognizer.isListening ? "Остановить" : "Начать")
                     .padding()
-                    .background(speechRecognizer.isRecording ? Color.red : Color.blue)
+                    .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }

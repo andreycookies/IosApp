@@ -1,0 +1,28 @@
+workflows:
+  ios-workflow:
+    name: iOS WordCounter Build
+    max_build_duration: 20
+    environment:
+      vars:
+        XCODE_WORKSPACE: WordCounterSpeechApp.xcodeproj
+        XCODE_SCHEME: WordCounterSpeechApp
+      xcode: latest
+    scripts:
+      - name: Install CocoaPods dependencies (if any)
+        script: |
+          if [ -f "Podfile" ]; then
+            pod install
+          fi
+      - name: Build .ipa
+        script: |
+          xcodebuild -project "$XCODE_WORKSPACE"             -scheme "$XCODE_SCHEME"             -sdk iphoneos             -configuration Release             archive -archivePath $CM_BUILD_DIR/WordCounterSpeechApp.xcarchive
+          xcodebuild -exportArchive             -archivePath $CM_BUILD_DIR/WordCounterSpeechApp.xcarchive             -exportOptionsPlist ExportOptions.plist             -exportPath $CM_BUILD_DIR/export
+    artifacts:
+      - $CM_BUILD_DIR/export/*.ipa
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
+        notify:
+          success: true
+          failure: true

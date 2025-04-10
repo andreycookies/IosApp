@@ -1,1 +1,180 @@
-// Xcode project stub — открой в Xcode и пересобери вручную.
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = { };
+  objectVersion = 55;
+  objects = {
+
+    /* Project object */
+    1D6058900D05DD3D006BFB54 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastSwiftUpdateCheck = 9999;
+        LastUpgradeCheck = 9999;
+        ORGANIZATIONNAME = "Your Name";
+      };
+      buildConfigurationList = 1D60589E0D05DD3E006BFB54 /* Build configuration list */;
+      compatibilityVersion = "Xcode 12.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 1D60588D0D05DD3D006BFB54;
+      productRefGroup = 1D60588E0D05DD3D006BFB54;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1D6058910D05DD3E006BFB54,
+      );
+    };
+
+    /* Main Group */
+    1D60588D0D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        1D60588E0D05DD3D006BFB54,
+      );
+      sourceTree = "<group>";
+    };
+
+    /* Sources Group */
+    1D60588E0D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        AA1111111111111111111111 /* ContentView.swift */,
+        AA2222222222222222222222 /* SpeechManager.swift */,
+        AA3333333333333333333333 /* WordCounterSpeechApp.swift */,
+      );
+      name = WordCounterSpeechApp;
+      sourceTree = "<group>";
+    };
+
+    /* Target */
+    1D6058910D05DD3E006BFB54 /* WordCounterSpeechApp */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1D60589F0D05DD3E006BFB54;
+      buildPhases = (
+        1D6058920D05DD3E006BFB54 /* Sources */,
+        1D6058930D05DD3E006BFB54 /* Frameworks */,
+      );
+      buildRules = ( );
+      dependencies = ( );
+      name = WordCounterSpeechApp;
+      productName = WordCounterSpeechApp;
+      productType = "com.apple.product-type.application";
+    };
+
+    /* Sources Build Phase */
+    1D6058920D05DD3E006BFB54 = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        AA1111111111111111111112,
+        AA2222222222222222222223,
+        AA3333333333333333333334,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+
+    /* Frameworks Build Phase */
+    1D6058930D05DD3E006BFB54 = {
+      isa = PBXFrameworksBuildPhase;
+      buildActionMask = 2147483647;
+      files = ( );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+
+    /* ContentView.swift */
+    AA1111111111111111111111 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      path = ContentView.swift;
+      sourceTree = "<group>";
+    };
+    AA1111111111111111111112 = {
+      isa = PBXBuildFile;
+      fileRef = AA1111111111111111111111;
+    };
+
+    /* SpeechManager.swift */
+    AA2222222222222222222222 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      path = SpeechManager.swift;
+      sourceTree = "<group>";
+    };
+    AA2222222222222222222223 = {
+      isa = PBXBuildFile;
+      fileRef = AA2222222222222222222222;
+    };
+
+    /* WordCounterSpeechApp.swift */
+    AA3333333333333333333333 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      path = WordCounterSpeechApp.swift;
+      sourceTree = "<group>";
+    };
+    AA3333333333333333333334 = {
+      isa = PBXBuildFile;
+      fileRef = AA3333333333333333333333;
+    };
+
+    /* Build configurations */
+    1D60589E0D05DD3E006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058940D05DD3E006BFB54 /* Debug */,
+        1D6058950D05DD3E006BFB54 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1D60589F0D05DD3E006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058960D05DD3E006BFB54 /* Debug */,
+        1D6058970D05DD3E006BFB54 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+
+    /* Config: Debug */
+    1D6058940D05DD3E006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+      };
+      name = Debug;
+    };
+    1D6058950D05DD3E006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+      };
+      name = Release;
+    };
+    1D6058960D05DD3E006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        ENABLE_BITCODE = NO;
+      };
+      name = Debug;
+    };
+    1D6058970D05DD3E006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        ENABLE_BITCODE = NO;
+      };
+      name = Release;
+    };
+
+  };
+  rootObject = 1D6058900D05DD3D006BFB54 /* Project object */;
+}

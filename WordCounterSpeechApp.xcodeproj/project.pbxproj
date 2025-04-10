@@ -146,6 +146,7 @@
       isa = XCBuildConfiguration;
       buildSettings = {
         PRODUCT_NAME = "$(TARGET_NAME)";
+		PRODUCT_BUNDLE_IDENTIFIER = com.yourname.WordCounterSpeechApp;
       };
       name = Debug;
     };
@@ -153,6 +154,7 @@
       isa = XCBuildConfiguration;
       buildSettings = {
         PRODUCT_NAME = "$(TARGET_NAME)";
+		PRODUCT_BUNDLE_IDENTIFIER = com.yourname.WordCounterSpeechApp;
       };
       name = Release;
     };
@@ -160,6 +162,7 @@
       isa = XCBuildConfiguration;
       buildSettings = {
         PRODUCT_NAME = "$(TARGET_NAME)";
+		PRODUCT_BUNDLE_IDENTIFIER = com.yourname.WordCounterSpeechApp;
         SWIFT_VERSION = 5.0;
         ENABLE_BITCODE = NO;
       };
@@ -169,6 +172,7 @@
       isa = XCBuildConfiguration;
       buildSettings = {
         PRODUCT_NAME = "$(TARGET_NAME)";
+		PRODUCT_BUNDLE_IDENTIFIER = com.yourname.WordCounterSpeechApp;
         SWIFT_VERSION = 5.0;
         ENABLE_BITCODE = NO;
       };
